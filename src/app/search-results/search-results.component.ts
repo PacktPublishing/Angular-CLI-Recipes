@@ -3,8 +3,8 @@ import { Show } from 'src/app/show';
 import { switchMap, tap } from 'rxjs/operators';
 import { Observable, Subject } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SearchService } from 'src/app/search.service';
 import { FavoritesService } from 'src/app/favorites.service';
+import { SearchService } from 'src/app/tvmaze/search.service';
 
 @Component({
   selector: 'app-search-results',
