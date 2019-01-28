@@ -1,0 +1,19 @@
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img [src]="show.image.medium">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>{{ show.name }}</strong>
+        <br>
+        <small>Premiered {{ show.premiered | date:'yyyy' }} at <em>{{ show.network.name }}</em></small>
+      </p>
+      <p >
+        <span>{{ show.rating.average }}</span>
+      </p>
+    </div>
+  </div>
+</article>

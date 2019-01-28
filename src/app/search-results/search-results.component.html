@@ -1,0 +1,23 @@
+<h2 class="subtitle">Search results</h2>
+
+<div class="level" *ngIf="!(ready$ | async)">
+  <div class="level-left">
+    <div class="spinner-border" role="status"></div>
+    <span>Searching ... </span>
+  </div>
+</div>
+
+<div *ngIf="result | async as show">
+  <div class="level">
+    <div class="level-left">
+      <app-show-card [show]="show"></app-show-card>
+    </div>
+  </div>
+  <div class="level">
+    <div class="level-left">
+      <button class="button is-info" (click)="add(show)">Add</button>
+    </div>
+  </div>
+</div>
+
+<app-tvmaze></app-tvmaze>

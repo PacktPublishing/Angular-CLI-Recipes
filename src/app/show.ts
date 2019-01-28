@@ -17,5 +17,5 @@ class ShowNetwork {
 }
 
 class ShowRating {
-  average: string;
+  average: number;
 }

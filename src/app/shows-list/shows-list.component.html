@@ -1,0 +1,11 @@
+<div *ngFor="let show of shows">
+  <div class="item">
+    <app-show-card [show]="show"></app-show-card>
+  </div>
+  <div style="padding-top: 1em">
+    <button class="button is-danger" title="Remove '{{show.name}}' from your list?">Remove</button>
+  </div>
+</div>
+<div class="empty" *ngIf="!shows || shows.length === 0">No shows pending to watch</div>
+
+
