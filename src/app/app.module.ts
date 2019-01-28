@@ -11,6 +11,7 @@ import { ShowCardComponent } from './show-card/show-card.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { ShowsListComponent } from './shows-list/shows-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ConfirmDirective } from './confirm.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     ShowCardComponent,
     SearchBoxComponent,
     ShowsListComponent,
+    ConfirmDirective,
   ],
   imports: [
     BrowserModule,
