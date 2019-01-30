@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TvmazeComponent } from '../tvmaze.component';
+import { SearchService } from 'src/app/tvmaze/search.service';
 
 @NgModule({
   declarations: [TvmazeComponent],
@@ -9,6 +10,9 @@ import { TvmazeComponent } from '../tvmaze.component';
   ],
   exports: [
     TvmazeComponent,
+  ],
+  providers: [
+    SearchService,
   ]
 })
 export class TvmazeModule { }
