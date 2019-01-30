@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StorageService } from 'src/app/storage.service';
 import { FavoritesService } from 'src/app/favorites.service';
 import { ConfirmDirective } from './confirm.directive';
+import { RatingPipe } from './rating.pipe';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ConfirmDirective } from './confirm.directive';
     SearchBoxComponent,
     ShowsListComponent,
     ConfirmDirective,
+    RatingPipe,
   ],
   imports: [
     BrowserModule,
