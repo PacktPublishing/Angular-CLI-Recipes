@@ -11,6 +11,8 @@ import { ShowCardComponent } from './show-card/show-card.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { ShowsListComponent } from './shows-list/shows-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StorageService } from 'src/app/storage.service';
+import { FavoritesService } from 'src/app/favorites.service';
 import { ConfirmDirective } from './confirm.directive';
 
 @NgModule({
@@ -29,7 +31,7 @@ import { ConfirmDirective } from './confirm.directive';
     HttpClientModule,
     TvmazeModule
   ],
-  providers: [SearchService],
+  providers: [StorageService, FavoritesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
