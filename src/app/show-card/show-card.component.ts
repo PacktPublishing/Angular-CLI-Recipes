@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Show } from 'src/app/show';
+import { Show } from 'tvmaze';
 
 @Component({
   selector: 'app-show-card',

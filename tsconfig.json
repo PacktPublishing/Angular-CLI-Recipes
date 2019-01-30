@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "tvmaze": [
+        "dist/tvmaze"
+      ],
+      "tvmaze/*": [
+        "dist/tvmaze/*"
+      ]
+    }
   }
 }

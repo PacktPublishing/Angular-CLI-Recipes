@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Show } from 'src/app/show';
+import { Show } from 'tvmaze';
 import { StorageService } from 'src/app/storage.service';
 
 @Injectable({

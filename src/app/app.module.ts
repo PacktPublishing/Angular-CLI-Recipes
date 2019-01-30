@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TvmazeModule } from './tvmaze/tvmaze.module';
+import { TvmazeModule } from 'tvmaze';
 
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { HomeComponent } from './home/home.component';

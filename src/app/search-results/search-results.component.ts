@@ -1,11 +1,11 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { Show } from 'src/app/show';
+import { Show } from 'tvmaze';
 import { switchMap, tap } from 'rxjs/operators';
 import { Observable, Subject } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { FavoritesService } from 'src/app/favorites.service';
-import { SearchService } from 'src/app/tvmaze/search.service';
+import { SearchService } from 'tvmaze';
 
 @Component({
   selector: 'app-search-results',

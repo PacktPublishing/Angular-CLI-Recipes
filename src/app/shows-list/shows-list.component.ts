@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Show } from 'src/app/show';
+import { Show } from 'tvmaze';
 import { FavoritesService } from 'src/app/favorites.service';
 
 @Component({
