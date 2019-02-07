@@ -9,7 +9,9 @@
       <p>
         <strong>{{ show.name }}</strong>
         <br>
-        <small>Premiered {{ show.premiered | date:'yyyy' }} at <em>{{ show.network.name }}</em></small>
+        <small><ng-container i18n="Premiered|Prefix for the premiere year@@premieredText">Premiered</ng-container>
+          {{ show.premiered | date:'yyyy' }} at
+          <em>{{ show.network.name }}</em></small>
       </p>
       <p [classList]="'rating is-' + (show.rating.average | rating)">
         <span>{{ show.rating.average }} - <span class="rating-text">{{ show.rating.average | rating }}</span></span>

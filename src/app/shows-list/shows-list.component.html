@@ -4,7 +4,8 @@
   </div>
   <div style="padding-top: 1em">
     <button class="button is-danger" title="Remove '{{show.name}}' from your list?"
-            appConfirm>Remove</button>
+            appConfirm
+            i18n="Remove button|Shown in the button to remove a show from the list@@removeButton">Remove</button>
   </div>
 </div>
 <div class="empty" *ngIf="!shows || shows.length === 0">No shows pending to watch</div>

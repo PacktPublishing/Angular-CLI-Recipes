@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="searchIndicator" datatype="html">
+        <source>Searching</source>
+        <target>Searching</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/search-results/search-results.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Indicator when results are loading</note>
+        <note priority="1" from="meaning">Searching text</note>
+      </trans-unit>
+      <trans-unit id="addButton" datatype="html">
+        <source>Add</source>
+        <target>Add</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/search-results/search-results.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Shown in the button to add a show to the list</note>
+        <note priority="1" from="meaning">Add button</note>
+      </trans-unit>
+      <trans-unit id="ac3c81829d8c9eeed1dd6a7496f9d801cd566f4f" datatype="html">
+        <source>Like &apos;Flash&apos; or &apos;Big Bang&apos;</source>
+        <target>Like &apos;Flash&apos; or &apos;Big Bang&apos;</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/search-box/search-box.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchText" datatype="html">
+        <source>Search</source>
+        <target>Search</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/search-box/search-box.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Shown on the search button</note>
+        <note priority="1" from="meaning">Search</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
