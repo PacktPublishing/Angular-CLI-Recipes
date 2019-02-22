@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShowCardComponent } from './show-card.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { RatingPipe } from 'src/app/rating.pipe';
 
 describe('ShowCardComponent', () => {
   let component: ShowCardComponent;
@@ -8,7 +10,8 @@ describe('ShowCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShowCardComponent ]
+      declarations: [ ShowCardComponent, RatingPipe ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA]
     })
     .compileComponents();
   }));
