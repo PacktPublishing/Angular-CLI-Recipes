@@ -11,4 +11,12 @@ describe('workspace-project App', () => {
     page.navigateTo();
     expect(page.getTitleText()).toEqual('My Shows');
   });
+
+  it('should go to search page', async () => {
+    page.enterSearchTerm('friends');
+    page.clickSearchButton();
+
+    const searching: boolean = await page.isOnSearchPage();
+    expect(searching).toBe(true);
+  });
 });
