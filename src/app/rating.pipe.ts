@@ -1,12 +1,28 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'rating'
+  name: 'rating',
 })
 export class RatingPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    return 'okay';
+    if (value >= 9) {
+      return 'excellent';
+    }
+
+    if (value >= 6) {
+      return 'good';
+    }
+
+    if (value >= 5) {
+      return 'okay';
+    }
+
+    if (value >= 3) {
+      return 'bad';
+    }
+
+    return 'awful';
   }
 
 }
